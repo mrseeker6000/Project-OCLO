@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="788.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.MachineFormController">
+  <Label layoutX="16.0" layoutY="14.0" prefHeight="23.0" prefWidth="153.0" style="-fx-background-color: grey; -fx-background-radius: 9;" text=" Total Machine Count :" />
+  <Label layoutX="172.0" layoutY="14.0" prefHeight="23.0" prefWidth="39.0" style="-fx-background-color: grey; -fx-background-radius: 9;" text="   10" />
+  <JFXTextField fx:id="txtName" focusColor="BLACK" layoutX="345.0" layoutY="275.0" onAction="#txtNameOnAction" promptText="Machine Name" />
+  <JFXTextField fx:id="txtId" focusColor="BLACK" layoutX="345.0" layoutY="241.0" onAction="#txtIdOnAction" promptText="Machine Id" />
+  <JFXTextField fx:id="txtWork" focusColor="BLACK" layoutX="345.0" layoutY="314.0" onAction="#txtWorkOnAction" promptText="Work" />
+  <JFXButton fx:id="addBtn" buttonType="RAISED" layoutX="328.0" layoutY="355.0" onAction="#AddOnAction" style="-fx-background-color: white;" text="Add" />
+  <JFXButton fx:id="updateBtn" buttonType="RAISED" layoutX="382.0" layoutY="355.0" onAction="#UpdateOnAction" style="-fx-background-color: white;" text="Update" />
+  <JFXButton fx:id="deleteBtn" buttonType="RAISED" layoutX="458.0" layoutY="355.0" onAction="#DeleteOnAction" style="-fx-background-color: white;" text="Delete" />
+  <TableView fx:id="machineTable" layoutX="15.0" layoutY="47.0" prefHeight="180.0" prefWidth="514.0">
+    <columns>
+      <TableColumn fx:id="colId" prefWidth="101.0" text="Machine Id" />
+      <TableColumn fx:id="colName" prefWidth="145.0" text="Name" />
+      <TableColumn fx:id="colWork" prefWidth="267.0" text="Work" />
+    </columns>
+  </TableView>
+  <ImageView fitHeight="46.0" fitWidth="39.0" layoutX="224.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+    <Image url="@../img/icons8-robot1.gif" />
+  </ImageView>
+  <JFXTextField fx:id="txtEmployeeId" focusColor="WHITE" layoutX="559.0" layoutY="47.0" onAction="#txtEmployeeIdOnAction" prefHeight="26.0" prefWidth="184.0" promptText="Employee Id" />
+  <JFXTextField fx:id="txtMachineId" focusColor="WHITE" layoutX="559.0" layoutY="91.0" onAction="#txtMachineIdOnAction" prefHeight="26.0" prefWidth="184.0" promptText="MachineId" />
+  <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="559.0" layoutY="200.0" onAction="#btnAddOnAction" style="-fx-background-color: white;" text="Add" />
+  <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="629.0" layoutY="200.0" onAction="#btnUpdateOnAction" style="-fx-background-color: white;" text="Update" />
+  <JFXButton fx:id="btnRemove" buttonType="RAISED" layoutX="708.0" layoutY="200.0" onAction="#btnRemoveOnAction" style="-fx-background-color: white;" text="Remove" />
+  <JFXComboBox fx:id="comStatus" focusColor="WHITE" layoutX="559.0" layoutY="137.0" onAction="#comStatusOnAction" prefHeight="26.0" prefWidth="184.0" promptText="Status" />
+   <TableView fx:id="MachineDetailTable" layoutX="16.0" layoutY="255.0" prefHeight="200.0" prefWidth="303.0">
+     <columns>
+       <TableColumn fx:id="colEmployeeId" prefWidth="106.0" text="Employee Id" />
+       <TableColumn fx:id="colMachineId" prefWidth="93.0" text="Machine Id" />
+         <TableColumn fx:id="colStatus" prefWidth="103.0" text="Status" />
+     </columns>
+   </TableView>
+</AnchorPane>

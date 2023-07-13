@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="login" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.LoginController">
+   <children>
+      <JFXTextField fx:id="txtUsername" focusColor="WHITE" layoutX="580.0" layoutY="204.0" onAction="#txtUsernameOnAction" prefHeight="26.0" prefWidth="257.0" promptText="username" style="-fx-background-radius: 6;" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Liberation Mono Bold Italic" size="13.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" layoutX="580.0" layoutY="271.0" onAction="#txtPasswordOnAction" prefHeight="26.0" prefWidth="257.0" promptText="pasword" style="-fx-background-radius: 6;" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Liberation Mono Bold Italic" size="13.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="580.0" layoutY="342.0" onAction="#loginOnAction" ripplerFill="BLACK" style="-fx-background-color: #393E46;" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect></JFXButton>
+      <JFXButton fx:id="registerBtn" buttonType="RAISED" layoutX="764.0" layoutY="342.0" onAction="#GoRegisterFormOnAction" style="-fx-background-color: #393E46;" text="Register" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="loginExitBtn" buttonType="RAISED" layoutX="997.0" layoutY="670.0" onAction="#ExitOnAction" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #393E46;" text="Exit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutX="10.0" layoutY="33.0" prefHeight="649.0" prefWidth="513.0" style="-fx-background-color: white; -fx-background-radius: 9;">
+         <children>
+            <Label layoutX="10.0" layoutY="31.0" prefHeight="9.0" prefWidth="439.0" text="Welcome back, CEO/Manager!">
+               <font>
+                  <Font name="Liberation Mono Bold Italic" size="24.0" />
+               </font></Label>
+            <Label layoutX="10.0" layoutY="61.0" prefHeight="123.0" prefWidth="494.0" text="We're excited to have you back with us at &#10;OCLO Plastic Company (PVT)ltd.Please enter your login &#10;details to access your account and stay updated on the&#10;latest news and developments in the plastic industry.&#10;Thank you for your continued leadership and support!">
+               <font>
+                  <Font name="Liberation Mono Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="424.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-male-user.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="338.0" fitWidth="513.0" layoutX="6.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/pexels-mockupeditorcom-205316.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="gmailBtn" fitHeight="94.0" fitWidth="109.0" layoutX="14.0" layoutY="585.0" onMouseClicked="#GmailOnMouseClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-gmail-logo-500.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fbBtn" fitHeight="94.0" fitWidth="94.0" layoutX="410.0" layoutY="586.0" onMouseClicked="#FbOnMouseClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-facebook-500.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

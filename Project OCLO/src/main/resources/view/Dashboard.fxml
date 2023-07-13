@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.DashboardController">
+    <children>
+        <Label layoutX="86.0" layoutY="13.0" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: grey; -fx-background-radius: 9;" text=" Working Employee Count :" />
+        <Label fx:id="employeeCount" layoutX="294.0" layoutY="13.0" prefHeight="26.0" prefWidth="48.0" style="-fx-background-color: grey; -fx-background-radius: 9;" text="   40" />
+        <Label fx:id="dateLbl" layoutX="354.0" layoutY="13.0" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: grey; -fx-background-radius: 9;" />
+        <Label fx:id="timeLbl" layoutX="559.0" layoutY="13.0" prefHeight="51.0" prefWidth="132.0" style="-fx-background-color: grey; -fx-background-radius: 9;" />
+        <BarChart layoutX="88.0" layoutY="64.0" prefHeight="322.0" prefWidth="509.0">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <TableView layoutX="136.0" layoutY="386.0" prefHeight="200.0" prefWidth="515.0">
+            <columns>
+                <TableColumn prefWidth="117.0" text="Order Id" />
+                <TableColumn prefWidth="155.0" text="Customer Id" />
+                <TableColumn prefWidth="133.0" text="Description" />
+                <TableColumn prefWidth="109.0" text="Price" />
+            </columns>
+        </TableView>
+        <Label layoutX="136.0" layoutY="370.0" text="On Day Orders :">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-speed.gif" />
+         </image>
+      </ImageView>
+    </children>
+
+</AnchorPane>

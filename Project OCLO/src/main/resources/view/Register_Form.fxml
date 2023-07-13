@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="register" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.RegisterFormController">
+   <children>
+      <JFXTextField fx:id="txtName" focusColor="WHITE" layoutX="730.0" layoutY="162.0" onAction="#txtNameOnAction" prefHeight="26.0" prefWidth="213.0" promptText="Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtUserName" focusColor="WHITE" layoutX="730.0" layoutY="219.0" onAction="#txtUserNameOnAction" prefHeight="26.0" prefWidth="213.0" promptText="username" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtPassword" focusColor="WHITE" layoutX="730.0" layoutY="282.0" onAction="#txtPasswordOnAction" prefHeight="26.0" prefWidth="213.0" promptText="password" unFocusColor="BLACK" />
+      <JFXButton fx:id="registerBtn" buttonType="RAISED" layoutX="730.0" layoutY="417.0" onAction="#RegisterOnAction" style="-fx-background-color: #393E46;" text="Register" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="893.0" layoutY="417.0" onAction="#BackOnAction" style="-fx-background-color: #393E46;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="comboUser" focusColor="WHITE" layoutX="730.0" layoutY="350.0" onAction="#comboUserOnAction" prefHeight="26.0" prefWidth="213.0" promptText="Account Type" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXComboBox>
+      <AnchorPane layoutX="10.0" layoutY="33.0" prefHeight="680.0" prefWidth="700.0" style="-fx-background-color: white; -fx-background-radius: 9;">
+         <children>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="600.0" text="Welcome to OCLO Plastic Company (PVT)ltd!">
+               <font>
+                  <Font name="Liberation Mono Bold Italic" size="24.0" />
+               </font></Label>
+            <Label layoutX="10.0" layoutY="53.0" prefHeight="151.0" prefWidth="589.0" text="Please fill out the following information to create your account &#10;and join our community of plastic industry leaders and experts.&#10;Stay updated on the latest trends and developments, connect&#10;with other professionals, and participate in thought-provoking &#10;discussions. &#10;Thank you for choosing OCLO Plastic Company (PVT)ltd!">
+               <font>
+                  <Font name="Liberation Mono Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="338.0" fitWidth="513.0" layoutX="6.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/pexels-mockupeditorcom-205316.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="gmailBtn" fitHeight="94.0" fitWidth="109.0" layoutX="14.0" layoutY="585.0" onMouseClicked="#GmailOnMouseClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-gmail-logo-500.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fbBtn" fitHeight="94.0" fitWidth="94.0" layoutX="410.0" layoutY="586.0" onMouseClicked="#FbOnMouseClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-facebook-500.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+<!--                  <Image url="@../img/OCLO%20ICONS%202/icons8-autograph-100.png" />-->
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

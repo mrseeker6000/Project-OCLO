@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.NavigatorCEOController">
+   <children>
+      <AnchorPane fx:id="homepage" layoutY="168.0" prefHeight="550.0" prefWidth="1080.0" style="-fx-background-color: white;">
+      </AnchorPane>
+      <AnchorPane layoutY="-1.0" prefHeight="170.0" prefWidth="1080.0" style="-fx-background-color: white;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <JFXButton fx:id="machine" buttonType="RAISED" layoutX="10.0" layoutY="11.0" onAction="#machineOnAction" prefHeight="85.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Machine" />
+            <JFXButton fx:id="dashboard" buttonType="RAISED" layoutX="495.0" layoutY="11.0" onAction="#dashboardOnAction" prefHeight="85.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Dashboard" />
+            <JFXButton fx:id="item" buttonType="RAISED" layoutX="175.0" layoutY="11.0" onAction="#itemOnAction" prefHeight="85.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Item" />
+            <JFXButton fx:id="order" buttonType="RAISED" layoutX="652.0" layoutY="11.0" onAction="#ordersOnAction" prefHeight="85.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Orders" />
+            <JFXButton fx:id="employee" buttonType="RAISED" layoutX="338.0" layoutY="11.0" onAction="#employeeOnAction" prefHeight="85.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Employee" />
+            <JFXButton fx:id="users" buttonType="RAISED" layoutX="981.0" layoutY="11.0" onAction="#usersOnAction" prefHeight="85.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Users" />
+            <JFXButton fx:id="customer" buttonType="RAISED" layoutX="812.0" layoutY="11.0" onAction="#customerOnAction" prefHeight="85.0" prefWidth="89.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Customer" />
+            <JFXProgressBar layoutY="106.0" prefHeight="2.0" prefWidth="1080.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

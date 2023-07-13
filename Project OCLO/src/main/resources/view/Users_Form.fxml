@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="383.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.UsersFormController">
+   <children>
+      <JFXTextField fx:id="txtUsername" focusColor="BLACK" layoutX="14.0" layoutY="14.0" onAction="#txtUsernameOnAction" promptText="username" />
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="203.0" layoutY="14.0" onAction="#btnAddOnAction" style="-fx-background-color: white;" text="Add" />
+      <JFXTextField fx:id="txtName" focusColor="BLACK" layoutX="14.0" layoutY="58.0" onAction="#txtNameOnAction" promptText="Name" />
+      <JFXTextField fx:id="txtPassword" focusColor="BLACK" layoutX="14.0" layoutY="101.0" onAction="#txtPasswordOnAction" promptText="password" />
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="203.0" layoutY="58.0" onAction="#btnUpdateOnAction" style="-fx-background-color: white;" text="Update" />
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="203.0" layoutY="101.0" onAction="#btnDeleteOnAction" style="-fx-background-color: white;" text="Delete" />
+      <ImageView fitHeight="100.0" fitWidth="97.0" layoutX="291.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-delete-user-data-480.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblUser" layoutX="14.0" layoutY="166.0" prefHeight="200.0" prefWidth="373.0">
+        <columns>
+          <TableColumn fx:id="colUsername" prefWidth="124.0" text="username" />
+          <TableColumn fx:id="colName" prefWidth="124.0" text="Name" />
+            <TableColumn fx:id="colAccountType" prefWidth="123.0" text="Account Type" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="comAccountType" layoutX="14.0" layoutY="134.0" onAction="#comAccountTypeOnAction" prefHeight="26.0" prefWidth="155.0" promptText="Account Type" />
+   </children>
+</AnchorPane>

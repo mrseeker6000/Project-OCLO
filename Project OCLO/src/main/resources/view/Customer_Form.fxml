@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="438.0" prefWidth="518.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.CustomerFormController">
+   <children>
+      <JFXButton fx:id="addBtn" buttonType="RAISED" layoutX="14.0" layoutY="174.0" onAction="#addBtnOnAction" style="-fx-background-color: white;" text="Add" />
+      <JFXTextField fx:id="txtId" layoutX="14.0" layoutY="14.0" promptText="Customer Id (NIC)" />
+      <JFXTextField fx:id="txtName" layoutX="14.0" layoutY="52.0" onAction="#txtNameOnAction" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="14.0" layoutY="90.0" onAction="#txtAddressOnAction" promptText="Address" />
+      <JFXTextField fx:id="txtContact" layoutX="14.0" layoutY="128.0" onAction="#txtContactOnAction" promptText="Contact" />
+      <JFXButton fx:id="updateBtn" buttonType="RAISED" layoutX="107.0" layoutY="174.0" onAction="#updateBtnOnAction" style="-fx-background-color: white;" text="Update" />
+      <ImageView fitHeight="120.0" fitWidth="113.0" layoutX="382.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-permanent-job-100.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblCustomer" layoutX="20.0" layoutY="219.0" prefHeight="200.0" prefWidth="475.0">
+        <columns>
+          <TableColumn fx:id="colNic" prefWidth="142.0" text="Customer Id (NIC)" />
+          <TableColumn fx:id="colName" prefWidth="127.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="102.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="103.0" text="Contact" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="75.0" fitWidth="66.0" layoutX="184.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-add-user-male-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="deleteBtn" buttonType="RAISED" layoutX="202.0" layoutY="174.0" onAction="#deleteBtnOnAction" style="-fx-background-color: white;" text="Delete" />
+   </children>
+</AnchorPane>
